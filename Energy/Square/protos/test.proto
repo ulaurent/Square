@@ -1,11 +1,11 @@
 syntax = "proto3";
 
 service SquareService{
-    rpc squareNumber(Number) returns (Result);
+    rpc squareNumber(Number) returns (Number) {}
 }
 
 message Number{
-    int32 input = 1;
+    float value = 1;
 }
 
 message Result{
