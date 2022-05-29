@@ -10,7 +10,7 @@ import test_pb2_grpc
 
 class SquareServiceServicer(test_pb2_grpc.SquareServiceServicer):
 
-    def squareRoot(self, request, context):
+    def squareNumber(self, request, context):
         responseA = request.input * request.input
         return test_pb2.Result(responseA = responseA)
 
