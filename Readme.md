@@ -19,8 +19,8 @@ I like grpcurl more than grpc_cli cause grpcurl can work with SSH tunnels via th
 
 Verify it works via grpcurl ie grpcurl -plaintext  -d '{"arg1": 12345}'127.0.0.1:50051 something.something.something/something
 
-For extra credit implement reflection so you can do something like grpcurl 127.0.0.1:50051 list
+For extra, implement reflection so you can do something like grpcurl 127.0.0.1:50051 list
 
-Next dockerize the python app.  for extra credit do it via docker-compose so you can do something like docker-compose up --build -d some_container
+Next dockerize the python app.  Extra: do it via docker-compose so you can do something like docker-compose up --build -d some_container
 
-You might need help on this so let me know and also there's more after this, this is just the beginner blocks.  Eventually wire it up into envoy proy to go from grpc to grpcweb.  Thenspin up a frontend that communicates with it.
+Eventually wire it up into envoy proy to go from grpc to grpcweb.  Thenspin up a frontend that communicates with it.
