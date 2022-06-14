@@ -21,6 +21,10 @@ Verify it works via grpcurl ie grpcurl -plaintext  -d '{"arg1": 12345}'127.0.0.1
 
 For extra, implement reflection so you can do something like grpcurl 127.0.0.1:50051 list
 
-Next dockerize the python app.  Extra: do it via docker-compose so you can do something like docker-compose up --build -d some_container
+Next dockerize the python app.  
 
-Eventually wire it up into envoy proy to go from grpc to grpcweb.  Thenspin up a frontend that communicates with it.
+Extra: do it via docker-compose so you can do something like docker-compose up --build -d some_container
+
+Wire it up into envoy proy to go from grpc to grpcweb.  
+
+Create a frontend that communicates with it.
